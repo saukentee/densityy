@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Рабочий лист по физике: Плотность вещества (7 класс)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #222;
+      line-height: 1.4;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .page {
+      background: #fff;
+      padding: 30px 40px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 4px;
+    }
+    header {
+      border-bottom: 2px solid #2b579a;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-size: 20px;
+      color: #2b579a;
+      margin: 0 0 5px 0;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+    .badge {
+      background: #2b579a;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .student-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    .line-input {
+      display: inline-block;
+      border-bottom: 1px solid #333;
+      min-width: 150px;
+    }
+    .memo-box {
+      background-color: #f0f4f8;
+      border-left: 4px solid #2b579a;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      font-size: 13.5px;
+    }
+    .memo-box h3 {
+      margin: 0 0 6px 0;
+      font-size: 14.5px;
+      color: #2b579a;
+    }
+    .memo-box p {
+      margin: 3px 0;
+    }
+    .step-title {
+      background: #e9eef5;
+      color: #1f3f70;
+      padding: 6px 12px;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 4px;
+      margin: 18px 0 10px 0;
+    }
+    .task-text {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    table.grid-tasks {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    table.grid-tasks th, table.grid-tasks td {
+      border: 1px solid #bbb;
+      padding: 8px 12px;
+      width: 50%;
+      vertical-align: top;
+    }
+    table.grid-tasks th {
+      background: #f5f7fa;
+      text-align: left;
+      font-weight: 600;
+    }
+    .blank {
+      display: inline-block;
+      border-bottom: 1px solid #333;
+      width: 70px;
+    }
+    table.problem-box {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    table.problem-box td {
+      border: 1px solid #999;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+    .col-dano {
+      width: 26%;
+    }
+    .col-si {
+      width: 22%;
+    }
+    .col-sol {
+      width: 52%;
+    }
+    .box-label {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .sol-line {
+      margin-bottom: 18px;
+    }
+    .ans-line {
+      border-top: 1px dashed #ccc;
+      padding-top: 6px;
+      margin-top: 25px;
+      font-weight: bold;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 8px;
+      margin-top: 20px;
+    }
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .page {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        page-break-after: always;
+      }
+      .page:last-child {
+        page-break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- СТРАНИЦА 1 -->
+  <div class="page">
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>Рабочий лист по физике: Плотность вещества</h1>
+          <p class="subtitle">Тема: Расчёт плотности, массы и объёма тела (пошаговый практикум)</p>
+        </div>
+        <div class="badge">7 класс</div>
+      </div>
+      <div class="student-info">
+        <div>ФИ ученика: <span class="line-input" style="min-width: 240px;"></span></div>
+        <div>Класс: 7 «<span class="line-input" style="min-width: 25px;"></span>»</div>
+        <div>Дата: <span class="line-input" style="min-width: 100px;"></span></div>
+      </div>
+    </header>
+
+    <div class="memo-box">
+      <h3>Памятка для решения задач</h3>
+      <p><strong>Формулы:</strong> &rho; = m / V &nbsp;&rArr;&nbsp; m = &rho; &middot; V &nbsp;&rArr;&nbsp; V = m / &rho;</p>
+      <p><strong>Масса (СИ):</strong> 1 г = 0,001 кг (&divide; 1000); &nbsp; 1 т = 1000 кг (&times; 1000)</p>
+      <p><strong>Объём (СИ):</strong> 1 см&sup3; = 0,000001 м&sup3; = 10<sup>&minus;6</sup> м&sup3; (&divide; 1 000 000); &nbsp; 1 л = 1 дм&sup3; = 0,001 м&sup3; (&divide; 1000)</p>
+    </div>
+
+    <!-- Шаг 1 -->
+    <div class="step-title">Шаг 1. Переводим массу в систему СИ (килограммы)</div>
+    <table class="grid-tasks">
+      <tr>
+        <th>Задание 1 (пункты 1–2)</th>
+        <th>Задание 1 (пункты 3–4)</th>
+      </tr>
+      <tr>
+        <td>
+          <div style="margin-bottom: 10px;">1) 500 г = <span class="blank"></span> кг</div>
+          <div>2) 75 г = <span class="blank"></span> кг</div>
+        </td>
+        <td>
+          <div style="margin-bottom: 10px;">3) 2,4 т = <span class="blank"></span> кг</div>
+          <div>4) 1250 г = <span class="blank"></span> кг</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 2 -->
+    <div class="step-title">Шаг 2. Переводим объём в систему СИ (кубические метры)</div>
+    <table class="grid-tasks">
+      <tr>
+        <th>Задание 2 (пункты 1–2)</th>
+        <th>Задание 2 (пункты 3–4)</th>
+      </tr>
+      <tr>
+        <td>
+          <div style="margin-bottom: 10px;">1) 200 см&sup3; = <span class="blank"></span> м&sup3;</div>
+          <div>2) 5000 см&sup3; = <span class="blank"></span> м&sup3;</div>
+        </td>
+        <td>
+          <div style="margin-bottom: 10px;">3) 4 л = <span class="blank"></span> м&sup3;</div>
+          <div>4) 25 дм&sup3; = <span class="blank"></span> м&sup3;</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 3 -->
+    <div class="step-title">Шаг 3. Соединяем Шаг 1 и Шаг 2 — находим плотность (&rho; = m / V)</div>
+    
+    <p class="task-text"><strong>Задание 3А (величины уже в СИ):</strong> Металлический блок объёмом 0,2 м&sup3; имеет массу 540 кг. Найдите плотность этого металла.</p>
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano" style="width: 35%;">
+          <span class="box-label">Дано:</span>
+          <div style="height: 45px;"></div>
+          <span class="box-label" style="border-top: 1px solid #999; padding-top: 4px;">Найти:</span>
+        </td>
+        <td class="col-sol" style="width: 65%;">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">&rho; = m / V =</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <p class="task-text"><strong>Задание 3Б (сначала переводим в СИ, затем считаем):</strong> Деталь массой 780 г имеет объём 100 см&sup3;. Вычислите плотность материала, из которого изготовлена деталь.</p>
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano">
+          <span class="box-label">Дано:</span>
+          <div style="height: 65px;"></div>
+        </td>
+        <td class="col-si">
+          <span class="box-label">СИ:</span>
+        </td>
+        <td class="col-sol">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">&rho; = m / V =</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 4 (условие) -->
+    <div class="step-title">Шаг 4. Находим объём по размерам тела и вычисляем плотность</div>
+    <p class="task-text"><strong>Задание 4.</strong> Деревянный брусок имеет форму прямоугольного параллелепипеда с размерами: длина 20 см, ширина 10 см, высота 5 см. Масса бруска 700 г. Определите плотность древесины. <em>(Подсказка: V = a &middot; b &middot; c в см&sup3;, затем переведите в м&sup3;.)</em></p>
+
+    <footer>
+      <span>Физика &bull; 7 класс &bull; Плотность вещества</span>
+      <span>Страница 1 из 2</span>
+    </footer>
+  </div>
+
+  <!-- СТРАНИЦА 2 -->
+  <div class="page">
+    <!-- Шаг 4 (бланк решения) -->
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano">
+          <span class="box-label">Дано:</span>
+          <div style="height: 95px;"></div>
+        </td>
+        <td class="col-si">
+          <span class="box-label">СИ:</span>
+        </td>
+        <td class="col-sol">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">1) V = a &middot; b &middot; c =</div>
+          <div class="sol-line">2) &rho; = m / V =</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 5 -->
+    <div class="step-title">Шаг 5. Находим массу тела по плотности и объёму (m = &rho; &middot; V)</div>
+    <p class="task-text"><strong>Задание 5.</strong> В канистру объёмом 20 л доверху налили бензин, плотность которого равна 710 кг/м&sup3;. Определите массу бензина в канистре.</p>
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano">
+          <span class="box-label">Дано:</span>
+          <div style="height: 75px;"></div>
+        </td>
+        <td class="col-si">
+          <span class="box-label">СИ:</span>
+        </td>
+        <td class="col-sol">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">m = &rho; &middot; V =</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 6 -->
+    <div class="step-title">Шаг 6. Находим объём тела по массе и плотности (V = m / &rho;)</div>
+    <p class="task-text"><strong>Задание 6.</strong> Гранитная плита имеет массу 1,3 т. Каков объём этой плиты, если плотность гранита составляет 2600 кг/м&sup3;?</p>
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano">
+          <span class="box-label">Дано:</span>
+          <div style="height: 75px;"></div>
+        </td>
+        <td class="col-si">
+          <span class="box-label">СИ:</span>
+        </td>
+        <td class="col-sol">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">V = m / &rho; =</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 7 -->
+    <div class="step-title">Шаг 7. Прикладная задача на сравнение</div>
+    <p class="task-text"><strong>Задание 7.</strong> Поместится ли 4 кг мёда (плотность 1350 кг/м&sup3;) в трёхлитровую банку (объём 3 л)? Обоснуйте ответ расчётом.</p>
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano">
+          <span class="box-label">Дано:</span>
+          <div style="height: 95px;"></div>
+        </td>
+        <td class="col-si">
+          <span class="box-label">СИ:</span>
+        </td>
+        <td class="col-sol">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">1) m<sub>max</sub> = &rho; &middot; V =</div>
+          <div class="sol-line">2) Сравнение (m<sub>max</sub> и 4 кг):</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Шаг 8 -->
+    <div class="step-title">Шаг 8. Задача повышенного уровня (сплошное тело или с полостью?)</div>
+    <p class="task-text"><strong>Задание 8.</strong> Медный шар объёмом 500 см&sup3; имеет массу 3,56 кг. Определите, сплошной этот шар или полый. Если внутри есть полость, найдите её объём (плотность меди 8900 кг/м&sup3;).</p>
+    <table class="problem-box">
+      <tr>
+        <td class="col-dano">
+          <span class="box-label">Дано:</span>
+          <div style="height: 95px;"></div>
+        </td>
+        <td class="col-si">
+          <span class="box-label">СИ:</span>
+        </td>
+        <td class="col-sol">
+          <span class="box-label">Решение:</span>
+          <div class="sol-line">1) V<sub>меди</sub> = m / &rho; =</div>
+          <div class="sol-line">2) V<sub>пол</sub> = V<sub>шара</sub> &minus; V<sub>меди</sub> =</div>
+          <div class="ans-line">Ответ:</div>
+        </td>
+      </tr>
+    </table>
+
+    <footer>
+      <span>Физика &bull; 7 класс &bull; Плотность вещества</span>
+      <span>Страница 2 из 2</span>
+    </footer>
+  </div>
+
+</body>
+</html>
